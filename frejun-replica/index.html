@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <title>Intelligent Call Automation with AI & Voice APIs - Frejun</title>
+    <title>Intelligent Call Automation with AI & Voice APIs - FreJun</title>
     <meta name="description" content="FreJun provides intelligent call automation, AI insights, and Voice APIs that integrate with your favorite workflow tools to transform business communication.">
     <!-- Favicon -->
     <link rel="icon" href="assets/img/favicon.svg" sizes="32x32">
@@ -23,7 +23,7 @@
         <div class="container">
             <p><strong>New Release:</strong> Try our AI Insights & Voice APIs with 30% off your first 3 months</p>
             <a href="#" class="button small-button primary-button">Start Free Trial</a>
-            <button class="close-banner"><i class="fas fa-times"></i></button>
+            <button class="close-banner" aria-label="Close banner"><i class="fas fa-times"></i></button>
         </div>
     </div>
 
@@ -32,14 +32,14 @@
         <div class="header-container">
             <div class="logo-container">
                 <a href="#" class="logo">
-                    <img src="assets/img/frejun-logo.svg" alt="Frejun logo">
+                    <img src="assets/img/freJun-logo.svg" alt="FreJun logo" width="150" height="40">
                 </a>
             </div>
             <nav class="main-navigation">
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
                     <li class="has-dropdown">
-                        <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="dropdown-toggle">Products <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#ai-insights"><strong>New:</strong> AI Insights</a></li>
                             <li><a href="#voice-apis"><strong>New:</strong> Voice APIs</a></li>
@@ -51,7 +51,7 @@
                         </ul>
                     </li>
                     <li class="has-dropdown">
-                        <a href="#">Solutions <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="dropdown-toggle">Solutions <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Sales Teams</a></li>
                             <li><a href="#">Customer Support</a></li>
@@ -64,7 +64,7 @@
                     <li><a href="#">Contact</a></li>
                     <li class="demo-button"><a href="#" class="button primary-button">Get Demo</a></li>
                 </ul>
-                <div class="mobile-menu-toggle">
+                <div class="mobile-menu-toggle" aria-label="Toggle mobile menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -93,7 +93,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="assets/img/hero-dashboard.png" alt="FreJun Dashboard with AI Insights">
+                <img src="assets/img/hero-dashboard.png" alt="FreJun Dashboard with AI Insights" loading="eager" width="600" height="400">
                 <div class="demo-badge" id="video-trigger">
                     <i class="fas fa-play-circle"></i> Watch Demo
                 </div>
@@ -108,19 +108,28 @@
             <div class="section-subheader">Trusted by 500+ leading businesses across industries</div>
             <div class="logo-slider">
                 <div class="logo-item">
-                    <img src="assets/img/client-logo-1.png" alt="Client Logo">
+                    <img src="assets/img/client-logo-1.png" alt="Client Logo" loading="lazy" width="150" height="50">
                 </div>
                 <div class="logo-item">
-                    <img src="assets/img/client-logo-2.png" alt="Client Logo">
+                    <img src="assets/img/client-logo-2.png" alt="Client Logo" loading="lazy" width="150" height="50">
                 </div>
                 <div class="logo-item">
-                    <img src="assets/img/client-logo-3.png" alt="Client Logo">
+                    <img src="assets/img/client-logo-3.png" alt="Client Logo" loading="lazy" width="150" height="50">
                 </div>
                 <div class="logo-item">
-                    <img src="assets/img/client-logo-4.png" alt="Client Logo">
+                    <img src="assets/img/client-logo-4.png" alt="Client Logo" loading="lazy" width="150" height="50">
                 </div>
                 <div class="logo-item">
-                    <img src="assets/img/client-logo-5.png" alt="Client Logo">
+                    <img src="assets/img/client-logo-5.png" alt="Client Logo" loading="lazy" width="150" height="50">
+                </div>
+                <div class="logo-slider-controls">
+                    <button class="slider-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="slider-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
         </div>
@@ -164,14 +173,14 @@
                 <p>Our powerful platform adapts to your specific industry needs, connecting teams and enhancing customer experiences</p>
             </div>
             <div class="solution-tabs">
-                <div class="tab-controls">
-                    <button class="tab-button active" data-tab="sales">Sales Teams</button>
-                    <button class="tab-button" data-tab="support">Customer Support</button>
-                    <button class="tab-button" data-tab="remote">Remote Teams</button>
-                    <button class="tab-button" data-tab="enterprise">Enterprise</button>
+                <div class="tab-controls" role="tablist">
+                    <button class="tab-button active" data-tab="sales" role="tab" aria-selected="true" aria-controls="sales">Sales Teams</button>
+                    <button class="tab-button" data-tab="support" role="tab" aria-selected="false" aria-controls="support">Customer Support</button>
+                    <button class="tab-button" data-tab="remote" role="tab" aria-selected="false" aria-controls="remote">Remote Teams</button>
+                    <button class="tab-button" data-tab="enterprise" role="tab" aria-selected="false" aria-controls="enterprise">Enterprise</button>
                 </div>
                 <div class="tab-content">
-                    <div class="tab-pane active" id="sales">
+                    <div class="tab-pane active" id="sales" role="tabpanel" aria-labelledby="sales-tab">
                         <div class="solution-content">
                             <div class="solution-text">
                                 <h3>Boost Conversion Rates by 43%</h3>
@@ -188,11 +197,11 @@
                                 </div>
                             </div>
                             <div class="solution-image">
-                                <img src="assets/img/sales-solution.png" alt="Sales Solution">
+                                <img src="assets/img/sales-solution.png" alt="Sales Solution" loading="lazy" width="500" height="350">
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="support">
+                    <div class="tab-pane" id="support" role="tabpanel" aria-labelledby="support-tab">
                         <div class="solution-content">
                             <div class="solution-text">
                                 <h3>Reduce Resolution Time by 37%</h3>
@@ -209,11 +218,11 @@
                                 </div>
                             </div>
                             <div class="solution-image">
-                                <img src="assets/img/support-solution.png" alt="Support Solution">
+                                <img src="assets/img/support-solution.png" alt="Support Solution" loading="lazy" width="500" height="350">
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="remote">
+                    <div class="tab-pane" id="remote" role="tabpanel" aria-labelledby="remote-tab">
                         <div class="solution-content">
                             <div class="solution-text">
                                 <h3>Connect Distributed Teams Seamlessly</h3>
@@ -230,11 +239,11 @@
                                 </div>
                             </div>
                             <div class="solution-image">
-                                <img src="assets/img/sales-solution.png" alt="Remote Solution">
+                                <img src="assets/img/sales-solution.png" alt="Remote Solution" loading="lazy" width="500" height="350">
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="enterprise">
+                    <div class="tab-pane" id="enterprise" role="tabpanel" aria-labelledby="enterprise-tab">
                         <div class="solution-content">
                             <div class="solution-text">
                                 <h3>Scale Communication with Enterprise Security</h3>
@@ -251,7 +260,7 @@
                                 </div>
                             </div>
                             <div class="solution-image">
-                                <img src="assets/img/support-solution.png" alt="Enterprise Solution">
+                                <img src="assets/img/support-solution.png" alt="Enterprise Solution" loading="lazy" width="500" height="350">
                             </div>
                         </div>
                     </div>
@@ -696,7 +705,7 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-logo">
-                    <img src="assets/img/frejun-logo-white.svg" alt="Frejun Logo">
+                    <img src="assets/img/freJun-logo-white.svg" alt="FreJun Logo">
                 </div>
                 <div class="footer-columns">
                     <div class="footer-column">
@@ -840,12 +849,31 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/lazysizes.min.js" async></script>
+    <script src="assets/js/main.js" defer></script>
+    <!-- Fallback script for when jQuery fails to load -->
     <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            if (typeof jQuery === 'undefined') {
+                console.error('jQuery failed to load. Loading fallback...');
+                var script = document.createElement('script');
+                script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js';
+                script.onload = function() {
+                    // Load main script after jQuery loads
+                    var mainScript = document.createElement('script');
+                    mainScript.src = 'assets/js/main.js';
+                    document.head.appendChild(mainScript);
+                };
+                document.head.appendChild(script);
+            }
+        });
+        
+        // Critical functionality that should work without jQuery
         document.addEventListener('DOMContentLoaded', function() {
-            // Mobile Menu Toggle
-            const mobileToggle = document.querySelector('.mobile-menu-toggle');
-            const mainNav = document.querySelector('.main-navigation');
+            // Mobile menu toggle
+            var mobileToggle = document.querySelector('.mobile-menu-toggle');
+            var mainNav = document.querySelector('.main-navigation');
             
             if (mobileToggle) {
                 mobileToggle.addEventListener('click', function() {
@@ -854,181 +882,21 @@
                 });
             }
             
-            // Tab Functionality
-            const tabButtons = document.querySelectorAll('.tab-button');
-            
-            if (tabButtons.length > 0) {
-                tabButtons.forEach(button => {
-                    button.addEventListener('click', function() {
-                        const tabId = this.getAttribute('data-tab');
-                        
-                        // Remove active class from all tabs and buttons
-                        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-                        document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
-                        
-                        // Add active class to current tab and button
-                        this.classList.add('active');
-                        document.getElementById(tabId).classList.add('active');
-                    });
-                });
-            }
-            
-            // Modal Functionality
-            const modalTriggers = document.querySelectorAll('.open-demo-modal');
-            const modalClose = document.querySelectorAll('.close-modal');
-            const demoModal = document.getElementById('demo-modal');
-            
-            if (modalTriggers.length > 0 && demoModal) {
-                modalTriggers.forEach(trigger => {
-                    trigger.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        demoModal.classList.add('active');
-                        document.body.style.overflow = 'hidden';
-                    });
-                });
-            }
-            
-            if (modalClose.length > 0) {
-                modalClose.forEach(close => {
-                    close.addEventListener('click', function() {
-                        document.querySelectorAll('.modal').forEach(modal => {
-                            modal.classList.remove('active');
-                        });
-                        document.body.style.overflow = '';
-                    });
-                });
-            }
-            
             // Close banner
-            const closeBanner = document.querySelector('.close-banner');
-            const banner = document.querySelector('.sticky-cta-banner');
-            const header = document.getElementById('masthead');
+            var closeBanner = document.querySelector('.close-banner');
+            var banner = document.querySelector('.sticky-cta-banner');
             
-            if (closeBanner && banner && header) {
+            if (closeBanner && banner) {
                 closeBanner.addEventListener('click', function() {
                     banner.style.display = 'none';
-                    header.classList.add('banner-closed');
+                    document.body.classList.add('banner-closed');
                 });
             }
             
-            // Pricing toggle
-            const billingToggle = document.getElementById('billing-toggle');
-            const pricingElements = document.querySelectorAll('.price');
-            const originalPrices = Array.from(pricingElements).map(el => parseInt(el.textContent.replace(/[^0-9]/g, '')));
-            
-            if (billingToggle && pricingElements.length > 0) {
-                billingToggle.addEventListener('change', function() {
-                    pricingElements.forEach((el, index) => {
-                        if (this.checked) {
-                            // Annual pricing (20% discount)
-                            const annualPrice = Math.round(originalPrices[index] * 0.8);
-                            el.textContent = '$' + annualPrice;
-                        } else {
-                            // Monthly pricing
-                            el.textContent = '$' + originalPrices[index];
-                        }
-                    });
-                });
-            }
-            
-            // ROI Calculator
-            const calculateButton = document.querySelector('.calculate-roi');
-            const teamSizeSlider = document.getElementById('team-size');
-            const callsSlider = document.getElementById('calls-per-day');
-            const rateSlider = document.getElementById('avg-hourly-rate');
-            
-            if (calculateButton && teamSizeSlider && callsSlider && rateSlider) {
-                // Update range values on slide
-                const updateRangeValue = function(slider) {
-                    const output = slider.nextElementSibling;
-                    output.textContent = slider.id === 'avg-hourly-rate' ? '$' + slider.value : slider.value;
-                    
-                    slider.addEventListener('input', function() {
-                        output.textContent = this.id === 'avg-hourly-rate' ? '$' + this.value : this.value;
-                    });
-                };
-                
-                updateRangeValue(teamSizeSlider);
-                updateRangeValue(callsSlider);
-                updateRangeValue(rateSlider);
-                
-                // Calculate ROI on button click
-                calculateButton.addEventListener('click', function() {
-                    const teamSize = parseInt(teamSizeSlider.value);
-                    const callsPerDay = parseInt(callsSlider.value);
-                    const hourlyRate = parseInt(rateSlider.value);
-                    
-                    // Calculate time saved: formula based on team size and calls
-                    const timeSaved = Math.round((teamSize * callsPerDay * 3) / 60 * 5); // hours per week
-                    
-                    // Calculate potential savings: formula based on time saved and hourly rate
-                    const monthlySavings = Math.round(timeSaved * hourlyRate * 4); // monthly savings
-                    
-                    // AI performance boost is static but looks dynamic
-                    const performanceBoost = 53;
-                    
-                    // Update the results
-                    document.querySelector('.result-item:nth-child(1) .result-value').textContent = timeSaved + ' hours/week';
-                    document.querySelector('.result-item:nth-child(2) .result-value').textContent = '$' + monthlySavings + '/month';
-                    document.querySelector('.result-item:nth-child(3) .result-value').textContent = '+' + performanceBoost + '%';
-                    
-                    // Animate the results for effect
-                    const results = document.querySelectorAll('.result-value');
-                    results.forEach(result => {
-                        result.style.animation = 'none';
-                        setTimeout(() => {
-                            result.style.animation = 'fadeIn 0.5s forwards';
-                        }, 10);
-                    });
-                });
-            }
-            
-            // Exit intent modal
-            const exitModal = document.getElementById('exit-intent');
-            
-            if (exitModal) {
-                let showOnce = false;
-                
-                document.addEventListener('mouseleave', function(e) {
-                    if (e.clientY < 0 && !showOnce) {
-                        exitModal.classList.add('active');
-                        document.body.style.overflow = 'hidden';
-                        showOnce = true;
-                    }
-                });
-            }
-            
-            // Video modal
-            const videoTrigger = document.getElementById('video-trigger');
-            const videoModal = document.getElementById('video-modal');
-            
-            if (videoTrigger && videoModal) {
-                videoTrigger.addEventListener('click', function() {
-                    videoModal.classList.add('active');
-                    document.body.style.overflow = 'hidden';
-                });
-            }
-            
-            // Form submissions
-            const forms = document.querySelectorAll('form');
-            
-            if (forms.length > 0) {
-                forms.forEach(form => {
-                    form.addEventListener('submit', function(e) {
-                        e.preventDefault();
-                        
-                        // Here would be AJAX form submission in a real implementation
-                        
-                        // Show success message (for demo purposes)
-                        const successMessage = document.createElement('div');
-                        successMessage.classList.add('form-success');
-                        successMessage.innerHTML = '<i class="fas fa-check-circle"></i> Thank you! We\'ll be in touch soon.';
-                        
-                        // Replace form with success message
-                        this.innerHTML = '';
-                        this.appendChild(successMessage);
-                    });
-                });
+            // Check if banner was previously closed
+            if (sessionStorage.getItem('bannerClosed') === 'true') {
+                if (banner) banner.style.display = 'none';
+                document.body.classList.add('banner-closed');
             }
         });
     </script>
