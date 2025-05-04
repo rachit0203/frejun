@@ -1,0 +1,5 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" fill="white"/>
+  <rect x="25" y="25" width="50" height="50" rx="10" ry="10" fill="#9B51E0"/>
+  <text x="35" y="55" font-family="Arial" font-size="16" font-weight="bold" fill="white">API</text>
+</svg> 

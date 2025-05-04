@@ -1,0 +1,5 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" fill="white"/>
+  <rect x="20" y="30" width="60" height="40" rx="5" ry="5" fill="#6FCF97"/>
+  <text x="28" y="58" font-family="Arial" font-size="20" font-weight="bold" fill="white">SLACK</text>
+</svg> 
